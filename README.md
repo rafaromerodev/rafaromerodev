@@ -38,6 +38,10 @@ A desktop app that replaced paper records with NFC cards at a non-profit food ba
 A shared PWA for two people covering groceries, meal plans, expenses, budgets, savings, workouts and chores. Authorization is enforced in PostgreSQL with Row Level Security and checked by integration tests. Business logic is pure and unit tested, money is stored as integer cents, and a real-time shopping list keeps both people in sync.<br>
 <sub>Next.js 15 · TypeScript · Supabase · PostgreSQL · Vitest · Playwright</sub>
 
+**[JARVIS: fork, in development](https://github.com/rafaromerodev/JARVIS)**<br>
+My work on an open-source local AI desktop assistant: origin checks on the local HTTP and WebSocket API (so a malicious website can't send it commands), Gemini 3 tool-calling compatibility, faster Whisper speech recognition on CPU, an optional ElevenLabs voice and a Spanish localization. The changes are listed in [FORK.md](https://github.com/rafaromerodev/JARVIS/blob/main/FORK.md).<br>
+<sub>Python · FastAPI · React · Electron</sub>
+
 ### Professional Experience
 
 **Web Developer**, Tu Idea Digital, Tenerife · *2025 – present*<br>
