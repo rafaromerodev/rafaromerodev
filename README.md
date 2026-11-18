@@ -11,7 +11,7 @@ I'm Rafael, a software developer in Tenerife. I build web applications and inter
 ### Professional Summary
 
 - About two years building websites and web applications for client businesses, covering frontend, backend, databases, servers and third-party integrations.
-- Designed, built and maintain an NFC attendance system that a non-profit food bank uses every day. I rewrote it after a data audit showed that 27 % of the logged visits were duplicates.
+- Built and maintain an NFC attendance system for a non-profit food bank, in use since 2025. I rewrote it after a data audit showed that 27 % of the logged visits were duplicates.
 - I write tests as part of the work, not after it: JUnit and Testcontainers, pytest, Vitest, Playwright end-to-end tests, and database security tests against a real PostgreSQL.
 - I came to software from field engineering in renewable energy, which taught me to treat production systems carefully.
 - Looking for **Software Developer, Backend or Full-Stack** roles at product companies, in Spain or remote.
@@ -31,7 +31,7 @@ I'm Rafael, a software developer in Tenerife. I build web applications and inter
 ### Featured Projects
 
 **[Sonrisas NFC](https://github.com/rafaromerodev/sonrisas-nfc)**<br>
-A desktop app that replaced paper records with NFC cards at a non-profit food bank, in daily use since 2025. Version 2 was rewritten from a production data audit: one visit per person per day, card replacement that keeps the history, expiry warnings, soft deletes, layered architecture and 115 tests.<br>
+A desktop app that records beneficiaries and attendances with NFC cards at a non-profit food bank, in use since 2025. Version 2 was rewritten from a production data audit: one visit per person per day, card replacement that keeps the history, expiry warnings, soft deletes, layered architecture and 115 tests.<br>
 <sub>Python · PySide6 · SQLite · NFC (PC/SC) · pytest</sub>
 
 **[Food Bank Attendance API](https://github.com/rafaromerodev/food-bank-attendance-api)**<br>
@@ -52,7 +52,7 @@ My work on an open-source local AI desktop assistant: origin checks on the local
 Websites and web applications for client businesses: frontend, backend, databases, hosting and server setup, and third-party service integrations.
 
 **Software Developer (independent)**, ONG Sonrisas Canarias · *2025 – present*<br>
-Built and maintain the NFC beneficiary and attendance system, migrated the production data from v1 to v2, and redesigned [the organisation's website](https://ongsonrisascanarias.es).
+Built and maintain the NFC beneficiary and attendance system, and migrated the production data from v1 to v2.
 
 **Before software:** wind turbine maintenance technician (Enercon, 2020), photovoltaic engineering internship (2019), and store and purchasing management in retail (2017–2025).
 
