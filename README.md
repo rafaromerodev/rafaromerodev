@@ -35,8 +35,8 @@ A desktop app that records beneficiaries and attendances with NFC cards at a non
 <sub>Python · PySide6 · SQLite · NFC (PC/SC) · pytest</sub>
 
 **[Food Bank Attendance API](https://github.com/rafaromerodev/food-bank-attendance-api)**<br>
-The same business rules as a Spring Boot 4 REST API on PostgreSQL. One attendance per person per day is enforced by a database constraint, and partial unique indexes keep card history. Check-ins return explicit outcomes, errors follow RFC 9457, and an injected clock makes date rules testable. Integration tests run against real PostgreSQL with Testcontainers, and the API ships as a non-root Docker image.<br>
-<sub>Java 21 · Spring Boot 4 · PostgreSQL · Flyway · JUnit 5 · Testcontainers · Docker</sub>
+The same business rules as a Spring Boot 4 REST API on PostgreSQL. One attendance per person per day is enforced by a database constraint, and partial unique indexes keep card history. Staff sign in with BCrypt-hashed accounts and two roles (front desk, coordinator). Check-ins return explicit outcomes, errors follow RFC 9457, and an injected clock makes date rules testable. Integration tests run against real PostgreSQL with Testcontainers, and the API ships as a non-root Docker image.<br>
+<sub>Java 21 · Spring Boot 4 · Spring Security · PostgreSQL · Flyway · JUnit 5 · Testcontainers · Docker</sub>
 
 **[Smart Household Dashboard](https://github.com/rafaromerodev/smart-household-dashboard)**<br>
 A shared PWA for two people covering groceries, meal plans, expenses, budgets, savings, workouts and chores. Authorization is enforced in PostgreSQL with Row Level Security and checked by integration tests. Business logic is pure and unit tested, money is stored as integer cents, and a real-time shopping list keeps both people in sync.<br>
