@@ -12,7 +12,7 @@ I'm Rafael, a software developer in Tenerife. I build web applications and inter
 
 - About two years building websites and web applications for client businesses, covering frontend, backend, databases, servers and third-party integrations.
 - Designed, built and maintain an NFC attendance system that a non-profit food bank uses every day. I rewrote it after a data audit showed that 27 % of the logged visits were duplicates.
-- I write tests as part of the work, not after it: pytest, Vitest, Playwright end-to-end tests, and database security tests against a real PostgreSQL.
+- I write tests as part of the work, not after it: JUnit and Testcontainers, pytest, Vitest, Playwright end-to-end tests, and database security tests against a real PostgreSQL.
 - I came to software from field engineering in renewable energy, which taught me to treat production systems carefully.
 - Looking for **Software Developer, Backend or Full-Stack** roles at product companies, in Spain or remote.
 
@@ -20,12 +20,12 @@ I'm Rafael, a software developer in Tenerife. I build web applications and inter
 
 | | Daily work and projects | Also worked with |
 |---|---|---|
-| **Languages** | TypeScript, JavaScript, Python, PHP, SQL | Java |
+| **Languages** | TypeScript, JavaScript, Python, Java, PHP, SQL | |
 | **Frontend** | React, Next.js, HTML5, CSS3, Tailwind CSS | |
-| **Backend** | Node.js, REST APIs, Next.js Server Actions | Spring Boot |
-| **Data** | PostgreSQL, Supabase (RLS, Auth, Storage), SQLite, MySQL | Oracle, Firebase |
+| **Backend** | Spring Boot, Node.js, REST APIs, OpenAPI, Next.js Server Actions | |
+| **Data** | PostgreSQL, Flyway, JPA / Hibernate, Supabase (RLS, Auth, Storage), SQLite, MySQL | Oracle, Firebase |
 | **Desktop & hardware** | PySide6 / PyQt5, NFC readers (PC/SC) | Electron |
-| **Testing** | pytest, Vitest, Playwright | |
+| **Testing** | JUnit 5, Testcontainers, pytest, Vitest, Playwright | |
 | **Tools & infra** | Git, GitHub Actions, Docker, Linux, WordPress (custom plugins), server administration | |
 
 ### Featured Projects
@@ -33,6 +33,10 @@ I'm Rafael, a software developer in Tenerife. I build web applications and inter
 **[Sonrisas NFC](https://github.com/rafaromerodev/sonrisas-nfc)**<br>
 A desktop app that replaced paper records with NFC cards at a non-profit food bank, in daily use since 2025. Version 2 was rewritten from a production data audit: one visit per person per day, card replacement that keeps the history, expiry warnings, soft deletes, layered architecture and 115 tests.<br>
 <sub>Python · PySide6 · SQLite · NFC (PC/SC) · pytest</sub>
+
+**[Food Bank Attendance API](https://github.com/rafaromerodev/food-bank-attendance-api)**<br>
+The same business rules as a Spring Boot 4 REST API on PostgreSQL. One attendance per person per day is enforced by a database constraint, and partial unique indexes keep card history. Check-ins return explicit outcomes, errors follow RFC 9457, and an injected clock makes date rules testable. Integration tests run against real PostgreSQL with Testcontainers, and the API ships as a non-root Docker image.<br>
+<sub>Java 21 · Spring Boot 4 · PostgreSQL · Flyway · JUnit 5 · Testcontainers · Docker</sub>
 
 **[Smart Household Dashboard](https://github.com/rafaromerodev/smart-household-dashboard)**<br>
 A shared PWA for two people covering groceries, meal plans, expenses, budgets, savings, workouts and chores. Authorization is enforced in PostgreSQL with Row Level Security and checked by integration tests. Business logic is pure and unit tested, money is stored as integer cents, and a real-time shopping list keeps both people in sync.<br>
